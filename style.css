@@ -1,0 +1,148 @@
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+}
+.logo img {
+  margin-right: 15px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navlinks {
+  display: flex;
+  margin-right: 100px;
+}
+.navlinks li {
+  margin-right: 59px;
+  list-style: none;
+  font-size: 20px;
+  font-weight: 400px;
+  line-height: 29px;
+}
+.maincnt {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.subcnt {
+  margin-left: 40px;
+}
+.subcnt h1 {
+  height: 142px;
+  font-size: 62px;
+  font-weight: 900px;
+  line-height: 76px;
+  width: 500px;
+}
+.subcnt p {
+  font-size: 30px;
+  width: 629px;
+  height: 74px;
+  color: #333a4d;
+}
+.subcnt button {
+  background: #ff7f66;
+  border-radius: 42px;
+  width: 243px;
+  height: 84px;
+  outline: none;
+  border: 0px;
+}
+.cnt1 {
+  display: none;
+}
+.maincnt img {
+  margin-top: 55px;
+}
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0px;
+  }
+  .maincnt {
+    display: none;
+  }
+  .navlinks {
+    position: fixed;
+    background-color: thistle;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    top: 0px;
+    margin-top: 0px;
+    padding-top: 50px;
+    clip-path: circle(85px at 90% -10%);
+    -webkit-clip-path: circle(85px at 90% -10%);
+    transition: all 0.5s ease-in-out;
+  }
+  .navlinks.open {
+    clip-path: circle(850px at 90% -10%);
+    -webkit-clip-path: circle(850px at 90% -10%);
+  }
+  .navlinks li {
+    width: 100%;
+    height: 100px;
+    margin-left: 80px;
+    margin-top: 20px;
+  }
+
+  .cnt1 {
+    display: block;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .maincnt2 img {
+    width: 100%;
+  }
+  .subcnt2 {
+    margin: 0 auto;
+  }
+  .subcnt2 h1 {
+    width: 374px;
+    font-weight: 800;
+    height: 36px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .subcnt2 p {
+    width: 321px;
+    height: 44px;
+    text-align: center;
+    font-weight: 400px;
+    font-size: 17px;
+    margin-left: 27px;
+    margin-right: 27px;
+    margin-top: 24px;
+  }
+  .subcnt2 button {
+    background: #ff7f66;
+    border-radius: 42px;
+    width: 215px;
+    height: 70px;
+    outline: none;
+    border: 0px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 51px;
+  }
+  .hamburgmenu {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    transform: translate(-5%, 20%);
+    z-index: 2;
+  }
+  .line {
+    width: 19px;
+    border: 1px solid #000000;
+    margin-bottom: 4px;
+  }
+  .logo h1 {
+    margin-right: 175px;
+  }
+  .logo {
+    margin-left: 30px;
+  }
+}
